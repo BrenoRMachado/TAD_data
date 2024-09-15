@@ -9,9 +9,9 @@ class Data
         ~Data ();
 
         // setters para dia, mes e ano
-        void setDia();
-        void setMes();
-        void setAno();
-        
+        void setDia(int d);
+        void setMes(int m);
+        void setAno(int a);
+
 
 };
