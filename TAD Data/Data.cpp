@@ -106,3 +106,8 @@ Data Data :: intToData(int num)
 
 }
 // ---------------------------------------------------------------------------  
+
+void Data :: exibeData()
+{
+    cout << "dia "<< dia << " do mes " << mes << " do ano " << ano;
+}
