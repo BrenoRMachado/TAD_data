@@ -84,6 +84,25 @@ int Data :: dataToInt()
     // + numero do mês que esta associado ao vetor numDiasMes
     // + o dia 
 
-    return (ano*365) + numDiasMes[mes] + dia;
+    return ((ano*365) - (1900 *365)) + numDiasMes[mes] + dia;
 }
 // ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+Data Data :: intToData(int num)
+{
+    int mesDoNum;
+    int diaDoNum;
+    for (int i = 0; i < 12 ; i++)
+    {
+        if ( num < numDiasMes[i])
+        {
+            mesDoNum = i - 1;
+        }
+    }
+    diaDoNum = num - numDiasMes[mesDoNum];
+
+    cout << "A data eh dia " << diaDoNum << " do mes " << mesDoNum + 1 ;
+
+}
+// ---------------------------------------------------------------------------  

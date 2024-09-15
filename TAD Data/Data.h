@@ -16,5 +16,8 @@ class Data
         // método dataToInt
         int dataToInt(); // vai converter a data em um numero inteiro
 
+        // método intToData
+        Data intToData(int num);
+
 
 };
