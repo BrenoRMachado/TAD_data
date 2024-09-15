@@ -73,5 +73,17 @@ void Data :: setAno(int a)
     }
 }
 
-// perguntar como essa varificação fica frente ao construtor que recebe parâmetros
+// ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+int Data :: dataToInt()
+{
+    //entregar o numero de dias
+    //numero de dias vai ser calculado pelo numero de anos 
+    //  (cada ano tem 365 dias)
+    // + numero do mês que esta associado ao vetor numDiasMes
+    // + o dia 
+
+    return (ano*365) + numDiasMes[mes] + dia;
+}
 // ---------------------------------------------------------------------------

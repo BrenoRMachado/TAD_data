@@ -13,5 +13,8 @@ class Data
         void setMes(int m);
         void setAno(int a);
 
+        // método dataToInt
+        int dataToInt(); // vai converter a data em um numero inteiro
+
 
 };
